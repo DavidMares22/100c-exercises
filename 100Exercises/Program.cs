@@ -12,3 +12,5 @@
 
 // Exercise 3
 
+// var result = CountCharacter.CountCharacterFrequency("Hola amigos como estan");
+// System.Console.WriteLine(string.Join(", ", result ));
