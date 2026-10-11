@@ -20,3 +20,15 @@
 
 // Exercise 4
 
+var players = new Dictionary<string, int>
+{
+    { "Anna", 45 },
+    { "Ben", 80 },
+    { "Uki", 70 },
+    { "Cara", 100 }, 
+    { "Derek", 90 },
+    { "Ella", 70 }
+};
+
+var result = FilterSelectQualifiedPlayers.GetQualifiedPlayers2(players);
+System.Console.WriteLine(string.Join(", ", result));
