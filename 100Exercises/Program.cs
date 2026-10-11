@@ -14,3 +14,9 @@
 
 // var result = CountCharacter.CountCharacterFrequency("Hola amigos como estan");
 // System.Console.WriteLine(string.Join(", ", result ));
+
+// var result = CountCharacter.CountCharacterFrequency2("Hola amigos como estan");
+// System.Console.WriteLine(string.Join(", ", result));
+
+// Exercise 4
+

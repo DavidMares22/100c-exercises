@@ -23,4 +23,16 @@ public class CountCharacter
             return result;
             
     }
+
+    public static Dictionary<char, int> CountCharacterFrequency2(string input)
+    {
+        var groups = input.GroupBy(character => character);
+        
+        foreach (var group in groups)
+        {
+            System.Console.WriteLine($"{group.Key}: {string.Join(", ", group)}");
+        }
+
+        return groups.ToDictionary(group => group.Key, group => group.Count());
+    }
 }
