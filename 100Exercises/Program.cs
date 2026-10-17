@@ -20,15 +20,27 @@
 
 // Exercise 4
 
-var players = new Dictionary<string, int>
+// var players = new Dictionary<string, int>
+// {
+//     { "Anna", 45 },
+//     { "Ben", 80 },
+//     { "Uki", 70 },
+//     { "Cara", 100 }, 
+//     { "Derek", 90 },
+//     { "Ella", 70 }
+// };
+
+// var result = FilterSelectQualifiedPlayers.GetQualifiedPlayers2(players);
+// System.Console.WriteLine(string.Join(", ", result));
+
+// Exercise 5
+
+var breaks = new List<(DateTime, DateTime)>
 {
-    { "Anna", 45 },
-    { "Ben", 80 },
-    { "Uki", 70 },
-    { "Cara", 100 }, 
-    { "Derek", 90 },
-    { "Ella", 70 }
+    (new DateTime(2023, 4, 1, 9, 0, 0), new DateTime(2023, 4, 1, 9, 15, 0)),
+    (new DateTime(2023, 4, 1, 12, 30, 0), new DateTime(2023, 4, 1, 13, 0, 0)),
+    (new DateTime(2023, 4, 1, 15, 45, 0), new DateTime(2023, 4, 1, 16, 0, 0))
 };
 
-var result = FilterSelectQualifiedPlayers.GetQualifiedPlayers2(players);
-System.Console.WriteLine(string.Join(", ", result));
+var result = CalculateTotal.CalculateTotalBreakTime(breaks);
+System.Console.WriteLine(result);
