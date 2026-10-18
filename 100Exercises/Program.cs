@@ -35,12 +35,25 @@
 
 // Exercise 5
 
-var breaks = new List<(DateTime, DateTime)>
-{
-    (new DateTime(2023, 4, 1, 9, 0, 0), new DateTime(2023, 4, 1, 9, 15, 0)),
-    (new DateTime(2023, 4, 1, 12, 30, 0), new DateTime(2023, 4, 1, 13, 0, 0)),
-    (new DateTime(2023, 4, 1, 15, 45, 0), new DateTime(2023, 4, 1, 16, 0, 0))
-};
+// var breaks = new List<(DateTime, DateTime)>
+// {
+//     (new DateTime(2023, 4, 1, 9, 0, 0), new DateTime(2023, 4, 1, 9, 15, 0)),
+//     (new DateTime(2023, 4, 1, 12, 30, 0), new DateTime(2023, 4, 1, 13, 0, 0)),
+//     (new DateTime(2023, 4, 1, 15, 45, 0), new DateTime(2023, 4, 1, 16, 0, 0))
+// };
 
-var result = CalculateTotal.CalculateTotalBreakTime(breaks);
-System.Console.WriteLine(result);
+// var result = CalculateTotal.CalculateTotalBreakTime(breaks);
+// System.Console.WriteLine(result);
+
+// Exercise 6
+
+var player = new TrackScore.Player
+{
+    Statistics = new TrackScore.Statistics { HighestScore = null }
+};
+ 
+TrackScore.UpdateHighestScore(player, 100);
+TrackScore.UpdateHighestScore(player, 90);
+TrackScore.UpdateHighestScore(player, 150);
+
+System.Console.WriteLine(player.Statistics.HighestScore);
