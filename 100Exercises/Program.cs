@@ -47,13 +47,21 @@
 
 // Exercise 6
 
-var player = new TrackScore.Player
-{
-    Statistics = new TrackScore.Statistics { HighestScore = null }
-};
+// var player = new TrackScore.Player
+// {
+//     Statistics = new TrackScore.Statistics { HighestScore = null }
+// };
  
-TrackScore.UpdateHighestScore(player, 100);
-TrackScore.UpdateHighestScore(player, 90);
-TrackScore.UpdateHighestScore(player, 150);
+// TrackScore.UpdateHighestScore(player, 100);
+// TrackScore.UpdateHighestScore(player, 90);
+// TrackScore.UpdateHighestScore(player, 150);
 
-System.Console.WriteLine(player.Statistics.HighestScore);
+// System.Console.WriteLine(player.Statistics.HighestScore);
+
+// Exercise 7
+// var result = CalculateCost.CalculateShippingCost(30, false); // => 10
+// var result = CalculateCost.CalculateShippingCost(30, true);  // => 5
+var result = CalculateCost.CalculateShippingCost2(60, false); // => 5
+// var result = CalculateShippingCost(60, true);  // => 0
+
+System.Console.WriteLine(result);
