@@ -61,7 +61,18 @@
 // Exercise 7
 // var result = CalculateCost.CalculateShippingCost(30, false); // => 10
 // var result = CalculateCost.CalculateShippingCost(30, true);  // => 5
-var result = CalculateCost.CalculateShippingCost2(60, false); // => 5
+// var result = CalculateCost.CalculateShippingCost2(60, false); // => 5
 // var result = CalculateShippingCost(60, true);  // => 0
 
-System.Console.WriteLine(result);
+// System.Console.WriteLine(result);
+
+// Exercise 8
+
+bool result = TryExtract.TryExtractDateComponents(
+    dateInput: "2024-12-15",
+    year: out var y,
+    month: out var m,
+    day: out var d
+);
+System.Console.WriteLine($"result {result} | yeaar {y} | month {m} | day {d}");
+// result == true, y == 2024, m == 12, d == 15
