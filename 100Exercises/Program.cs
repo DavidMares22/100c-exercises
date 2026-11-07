@@ -68,11 +68,16 @@
 
 // Exercise 8
 
-bool result = TryExtract.TryExtractDateComponents(
-    dateInput: "2024-12-15",
-    year: out var y,
-    month: out var m,
-    day: out var d
-);
-System.Console.WriteLine($"result {result} | yeaar {y} | month {m} | day {d}");
+// bool result = TryExtract.TryExtractDateComponents(
+//     dateInput: "2024-12-15",
+//     year: out var y,
+//     month: out var m,
+//     day: out var d
+// );
+// System.Console.WriteLine($"result {result} | yeaar {y} | month {m} | day {d}");
 // result == true, y == 2024, m == 12, d == 15
+
+// Exercise 9
+
+bool result = CheckPalindrome.IsPalindrome("dog");
+System.Console.WriteLine(result);
