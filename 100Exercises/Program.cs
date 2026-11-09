@@ -79,5 +79,20 @@
 
 // Exercise 9
 
-bool result = CheckPalindrome.IsPalindrome("dog");
-System.Console.WriteLine(result);
+// bool result = CheckPalindrome.IsPalindrome("dog");
+// System.Console.WriteLine(result);
+
+
+// Exercise 10
+
+var schedule = new WeekSchedule();
+// schedule[DayOfWeek.Monday] = "Gym";
+schedule["Friday"] = "Dinner with friends";
+ 
+// var mondayNote = schedule["monday"];   // => "Gym" (case-insensitive)
+var fridayNote = schedule[DayOfWeek.Friday]; // => "Dinner with friends"
+// var tuesdayNote = schedule["Tuesday"]; // => null
+
+// System.Console.WriteLine($"{mondayNote} -> for monday");
+// System.Console.WriteLine($"{tuesdayNote} -> for tuesday");
+System.Console.WriteLine($"{fridayNote} -> for friday");
