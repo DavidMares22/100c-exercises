@@ -1,5 +1,6 @@
 using System;
 
+namespace _100Exercises;
 
 // Your WeekSchedule is a candy machine with 7 buttons, one per day.
 

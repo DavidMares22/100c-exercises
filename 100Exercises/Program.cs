@@ -85,14 +85,36 @@
 
 // Exercise 10
 
-var schedule = new WeekSchedule();
+// var schedule = new WeekSchedule();
 // schedule[DayOfWeek.Monday] = "Gym";
-schedule["Friday"] = "Dinner with friends";
+// schedule["Friday"] = "Dinner with friends";
  
 // var mondayNote = schedule["monday"];   // => "Gym" (case-insensitive)
-var fridayNote = schedule[DayOfWeek.Friday]; // => "Dinner with friends"
+// var fridayNote = schedule[DayOfWeek.Friday]; // => "Dinner with friends"
 // var tuesdayNote = schedule["Tuesday"]; // => null
 
 // System.Console.WriteLine($"{mondayNote} -> for monday");
 // System.Console.WriteLine($"{tuesdayNote} -> for tuesday");
-System.Console.WriteLine($"{fridayNote} -> for friday");
+// System.Console.WriteLine($"{fridayNote} -> for friday");
+
+// Exercise 11
+
+var fileSystem = new InMemoryFileSystem(
+    new Dictionary<string, string>
+    {
+        { "readme.txt", "This is the readme file content." }
+    }
+);
+var logger = new ConsoleLogger();
+ 
+var exercise = new ReadFile(fileSystem, logger);
+ 
+try
+{
+    var content = exercise.TryReadFile("reame.txt");
+    Console.WriteLine(content);
+}
+catch (FileNotFoundException)
+{
+    Console.WriteLine("The file was missing.");
+}
